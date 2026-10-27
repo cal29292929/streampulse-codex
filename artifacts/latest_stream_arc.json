@@ -1,0 +1,173 @@
+{
+  "run_id": "streampulse-b8cbe7ca56f0",
+  "result_digest": "sha256:b8cbe7ca56f09f63c347871f64547623cf9e3e07e2de8bf6b5ee6ed868102d59",
+  "seed": 42,
+  "effective_mode": "simulated",
+  "total_arc_seconds": 600,
+  "accepted_votes": 268,
+  "cooldown_rejected_votes": 12,
+  "tallies": {
+    "!gravity_low": 64,
+    "!heal_party": 71,
+    "!invert_controls": 69,
+    "!spawn_boss": 64
+  },
+  "leader_command": "!heal_party",
+  "leader_votes": 71,
+  "phases": [
+    {
+      "phase_index": 1,
+      "phase_id": "01_intro_warmup",
+      "label": "Stream Warmup & Chat Greeting",
+      "start_sec": 0.0,
+      "end_sec": 60.0,
+      "duration_sec": 60,
+      "accepted_votes": 38,
+      "cooldown_rejected_votes": 2,
+      "current_leader_command": "!invert_controls",
+      "current_leader_votes": 12
+    },
+    {
+      "phase_index": 2,
+      "phase_id": "02_exploration_build",
+      "label": "Dungeon Exploration & Viewer Loadout Vote",
+      "start_sec": 60.0,
+      "end_sec": 150.0,
+      "duration_sec": 90,
+      "accepted_votes": 40,
+      "cooldown_rejected_votes": 0,
+      "current_leader_command": "!invert_controls",
+      "current_leader_votes": 24
+    },
+    {
+      "phase_index": 3,
+      "phase_id": "03_miniboss_spike",
+      "label": "Mini-Boss Encounter & Velocity Spike",
+      "start_sec": 150.0,
+      "end_sec": 240.0,
+      "duration_sec": 90,
+      "accepted_votes": 39,
+      "cooldown_rejected_votes": 1,
+      "current_leader_command": "!gravity_low",
+      "current_leader_votes": 30
+    },
+    {
+      "phase_index": 4,
+      "phase_id": "04_chaos_arena_voting",
+      "label": "High-Velocity Chaos Command Poll",
+      "start_sec": 240.0,
+      "end_sec": 360.0,
+      "duration_sec": 120,
+      "accepted_votes": 38,
+      "cooldown_rejected_votes": 2,
+      "current_leader_command": "!heal_party",
+      "current_leader_votes": 42
+    },
+    {
+      "phase_index": 5,
+      "phase_id": "05_boss_climax",
+      "label": "Boss Phase 2 Climax & Channel Points Surge",
+      "start_sec": 360.0,
+      "end_sec": 450.0,
+      "duration_sec": 90,
+      "accepted_votes": 36,
+      "cooldown_rejected_votes": 4,
+      "current_leader_command": "!gravity_low",
+      "current_leader_votes": 50
+    },
+    {
+      "phase_index": 6,
+      "phase_id": "06_clutch_recovery",
+      "label": "Clutch Recovery & Party Heal Poll",
+      "start_sec": 450.0,
+      "end_sec": 540.0,
+      "duration_sec": 90,
+      "accepted_votes": 40,
+      "cooldown_rejected_votes": 0,
+      "current_leader_command": "!invert_controls",
+      "current_leader_votes": 62
+    },
+    {
+      "phase_index": 7,
+      "phase_id": "07_victory_cooldown",
+      "label": "Victory Lap & Recap Summary",
+      "start_sec": 540.0,
+      "end_sec": 600.0,
+      "duration_sec": 60,
+      "accepted_votes": 37,
+      "cooldown_rejected_votes": 3,
+      "current_leader_command": "!heal_party",
+      "current_leader_votes": 71
+    }
+  ],
+  "eventsub_state": {
+    "state": "live_ready",
+    "live_ready": true,
+    "active_session_id": "es-sess-42-handover",
+    "subscriptions": {
+      "channel.chat.message": "enabled",
+      "channel.channel_points_custom_reward_redemption.add": "enabled",
+      "channel.poll.begin": "enabled",
+      "channel.poll.end": "enabled"
+    }
+  },
+  "redemption_audit": [
+    {
+      "redemption_id": "redemp-42-01",
+      "status": "validated_pending_approval",
+      "duplicate": false,
+      "sanitized_input": "Invert gravity for the final boss phase!"
+    },
+    {
+      "redemption_id": "redemp-42-01",
+      "status": "validated_pending_approval",
+      "duplicate": true,
+      "sanitized_input": ""
+    },
+    {
+      "redemption_id": "redemp-42-02",
+      "status": "rejected_refund_pending",
+      "duplicate": false,
+      "reject_reason": "blocked_unsafe_pattern",
+      "sanitized_input": ""
+    }
+  ],
+  "director_proposal": {
+    "proposal_id": "prop-42-01",
+    "action_type": "start_poll",
+    "title": "Activate !heal_party for Boss Phase?",
+    "options": [
+      "Yes - Unleash Chaos!",
+      "No - Save the Party!",
+      "Double Boss Speed"
+    ],
+    "duration_seconds": 60,
+    "status": "approved_human",
+    "approved_by": "streamer_deck_human"
+  },
+  "codex_provenance": {
+    "total_sessions": 1,
+    "sessions": [
+      {
+        "codex_session_id": "01a17db5-d802-7142-af5d-1f98c633b614",
+        "created_at_utc": "2026-10-27T14:15:02Z",
+        "opus_55_design": {
+          "score": 9.6,
+          "notes": "74,258-byte StreamPulse Codex EventSub & Beat-Detection Architecture (Session 33899088-2f8f-4cbf-8762-d1a002a47bf7)",
+          "reviewed_at": "2026-10-27T14:13:51Z",
+          "metadata": {}
+        },
+        "gpt_56_luna_review": {
+          "score": 9.5,
+          "notes": "25,961-byte Adversarial Contract & Security Review verifying EventSub reconnect handover, RedemptionGuard, and 600s deterministic stream arc",
+          "reviewed_at": "2026-10-27T14:15:02Z",
+          "metadata": {}
+        },
+        "metadata": {
+          "hackathon": "05-twitchcon-codex",
+          "sakura_synthesis_model": "preview/Kimi-K2.7-Code"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "stage": "01_design_opus55",
+  "hackathon": "05-twitchcon-codex",
+  "model": "claude-opus-5-5",
+  "started_at_jst": "2026-10-27T23:08:03+09:00",
+  "completed_at_jst": "2026-10-27T23:13:51+09:00",
+  "session_id": "33899088-2f8f-4cbf-8762-d1a002a47bf7",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 12901,
+    "cache_read_input_tokens": 649,
+    "output_tokens": 36733,
+    "output_tokens_details": {
+      "thinking_tokens": 5259
+    },
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 12901,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "global",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 36733,
+        "cache_read_input_tokens": 649,
+        "cache_creation_input_tokens": 12901,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 12901
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard",
+    "fallback_credit": null
+  },
+  "modelUsage": {
+    "claude-opus-5-5": {
+      "inputTokens": 2,
+      "outputTokens": 36733,
+      "cacheReadInputTokens": 649,
+      "cacheCreationInputTokens": 12901,
+      "webSearchRequests": 0,
+      "costUSD": 0.8380058,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 5259,
+      "cacheCreationEphemeral5mInputTokens": 0,
+      "cacheCreationEphemeral1hInputTokens": 12901,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "output_file": "/workspace/hackathons/05-twitchcon-codex/DESIGN_OPUS55.md",
+  "output_bytes": 74258
+}

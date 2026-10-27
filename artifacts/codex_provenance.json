@@ -1,0 +1,25 @@
+{
+  "total_sessions": 1,
+  "sessions": [
+    {
+      "codex_session_id": "01a17db5-d802-7142-af5d-1f98c633b614",
+      "created_at_utc": "2026-10-27T14:15:02Z",
+      "opus_55_design": {
+        "score": 9.6,
+        "notes": "74,258-byte StreamPulse Codex EventSub & Beat-Detection Architecture (Session 33899088-2f8f-4cbf-8762-d1a002a47bf7)",
+        "reviewed_at": "2026-10-27T14:13:51Z",
+        "metadata": {}
+      },
+      "gpt_56_luna_review": {
+        "score": 9.5,
+        "notes": "25,961-byte Adversarial Contract & Security Review verifying EventSub reconnect handover, RedemptionGuard, and 600s deterministic stream arc",
+        "reviewed_at": "2026-10-27T14:15:02Z",
+        "metadata": {}
+      },
+      "metadata": {
+        "hackathon": "05-twitchcon-codex",
+        "sakura_synthesis_model": "preview/Kimi-K2.7-Code"
+      }
+    }
+  ]
+}
