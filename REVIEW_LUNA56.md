@@ -46,7 +46,7 @@
 
 **実装前に必要な修正:**
 
-- 認証方式を Public Client の Device Code Flow に固定するのか、別方式も支援するのかを決め、client secret の要否を整理する。
+- 認証方式を Public Client の Device Code Flow に固定するのか、別方式もサポートするのかを決め、client secret の要否を整理する。
 - 起動時に token の期限と Twitch validation 結果を確認し、必須 scope と broadcaster/user ID の整合性を検証する。
 - scope 不足・期限切れ・validation 失敗時は、該当機能を disabled として表示し、自動で成功扱いにしない。
 - 保存時は atomic write、ファイル権限設定、可能なら OS credential store を仕様化する。token をエラー、audit、manifest、ブラウザレスポンスに含めない。
@@ -136,7 +136,7 @@ RFC 6455 の「minimal client」を自前実装しながら TLS、masking、frag
 
 - 自作 WebSocket の対応 RFC 範囲と、上限サイズ、非対応 opcode、fragment、compression の挙動を明記する。
 - handshake と frame parser の境界値・不正 frame のテストを必須にする。
-- 5秒デモの主要経路を WebSocket の自作実装に依存させない。ライブ接続が失敗した場合に操作可能な sim demo へ移行する。
+- 5秒デモの主要経路を WebSocket の自作実装に依存させない。ライブ接続が失敗した場合に操作可能な sim demo へ切り替える。
 - 依存追加を許可する場合は「core」ではなく「live extra」などの区分とライセンスを明示する。
 
 ## 要件カバレッジと提出物
